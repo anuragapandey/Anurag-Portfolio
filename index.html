@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="font.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    
+    <script src="matter.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Anurag Pandey</title>
+  </head>
+  <body class="bg-[#111] text-white font-['Nunito']">
+   
+    <section class="flex relative flex-col justify-between h-screen">
+      <div class="absolute inset-0 hidden md:block" id="wrapper-canvas"></div>
+      <header
+        class="z- pointer-events-none flex justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto"
+      >
+        <svg
+          width="80"
+          height="103"
+          viewBox="0 0 116 111"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M52.7606 1C47.6004 2.72879 21.5233 90.1138 5.78756 90.1138C-9.94823 90.1138 17.7658 116.352 22.2282 108.551C26.6906 100.751 49.0026 24.6376 52.7606 50.8754C56.5185 77.1131 97.8549 113.279 115 109.197C115 109.197 31.5751 18.7949 49.8945 28.25C68.2139 37.7051 52.7606 1 52.7606 1Z"
+            fill="url(#paint0_linear_63_2)"
+          />
+          <path
+            d="M115 109.197C115 109.197 66.6177 11.6369 52.7606 1C52.7606 1 68.2139 37.7051 49.8945 28.25C31.5751 18.7949 115 109.197 115 109.197Z"
+            fill="url(#paint1_linear_63_2)"
+          />
+          <path
+            d="M52.7606 1C47.6004 2.72879 21.5233 90.1138 5.78756 90.1138C-9.94823 90.1138 17.7658 116.352 22.2282 108.551C26.6906 100.751 49.0026 24.6376 52.7606 50.8754C56.5185 77.1131 97.8549 113.279 115 109.197M52.7606 1C66.6177 11.6369 115 109.197 115 109.197M52.7606 1C52.7606 1 68.2139 37.7051 49.8945 28.25C31.5751 18.7949 115 109.197 115 109.197"
+            stroke="black"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_63_2"
+              x1="55.814"
+              y1="-2.54565"
+              x2="123.142"
+              y2="104.342"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0.25" stop-color="white" />
+              <stop offset="0.425" stop-color="white" />
+              <stop offset="0.705" stop-color="white" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_63_2"
+              x1="58"
+              y1="1"
+              x2="51.7657"
+              y2="79.7011"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0.415" stop-color="white" />
+              <stop offset="1" stop-color="#B0B2C3" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <div class="flex pointer-events-auto items-center gap-6">
+         
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="hidden pointer-events-auto"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+
+          <a href="tel:9555991214" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-phone pointer-events-auto"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://wa.me/+91 9555991214?text=Hi, I just checked out your portfolio. Can we connect? "
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="whatsapp"
+              class="svg-inline--fa fa-whatsapp fa-w-14 pointer-events-auto"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="white"
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <!-- <div class="absolute z-9 inset-0 hidden md:block" id="wrapper-canvas"></div> -->
+
+      <div class="flex -mt-4 relative">
+        <div class="max-w-screen-xl px-4 mx-auto w-full">
+          <svg
+            class="pointer-events-none absolute top-0 left-1/2 -translate-y-1/3 -translate-x-1/2 w-[300px] md:w-[500px] sm:w-[400px] h-auto -mt-10"
+            width="273"
+            height="252"
+            viewBox="0 0 273 252"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M124.045 1C111.778 4.96511 49.788 205.389 12.3809 205.389C-25.0261 205.389 40.8556 265.568 51.4636 247.677C62.0716 229.786 115.112 55.2147 124.045 115.393C132.978 175.571 231.243 258.52 272 249.158C272 249.158 73.6829 41.8141 117.232 63.5C160.78 85.1859 124.045 1 124.045 1Z"
+              fill="url(#paint0_linear_55_2)"
+            />
+            <path
+              d="M272 249.158C272 249.158 156.986 25.3966 124.045 1C124.045 1 160.78 85.1859 117.232 63.5C73.6829 41.8141 272 249.158 272 249.158Z"
+              fill="url(#paint1_linear_55_2)"
+            />
+            <path
+              d="M124.045 1C111.778 4.96511 49.788 205.389 12.3809 205.389C-25.0261 205.389 40.8556 265.568 51.4636 247.677C62.0716 229.786 115.112 55.2147 124.045 115.393C132.978 175.571 231.243 258.52 272 249.158M124.045 1C156.986 25.3966 272 249.158 272 249.158M124.045 1C124.045 1 160.78 85.1859 117.232 63.5C73.6829 41.8141 272 249.158 272 249.158"
+              stroke="#1F2667"
+              stroke-opacity="0.14"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_55_2"
+                x1="131.303"
+                y1="-7.13222"
+                x2="283.277"
+                y2="242.933"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#2E399F" />
+                <stop offset="0.18" stop-color="#1B204F" />
+                <stop offset="0.705" stop-color="#424CAC" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_55_2"
+                x1="136.5"
+                y1="1"
+                x2="122.698"
+                y2="181.585"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0.415" stop-color="#3D4AC8" />
+                <stop offset="1" stop-color="#1F2667" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="relative ml-4 -mt-3">
+            <h1
+              class="md:text-[64px] mr-8 text-[40px] my-0 font-['spartan'] leading-10 pointer-events-none"
+            >
+              Anurag pandey
+            </h1>
+            <p class="font-['Merriweather'] italic my-8 pointer-events-none">
+              FRONTEND Engineer
+            </p>
+            <button id="about-me-btn"
+              class="bg-[#4595eb] hover:scale-105 ease-in-out duration-200 group relative py-2 px-5 rounded-[5px] font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6]"
+            >
+              About Me
+              <svg
+                class="absolute group-hover:-right-6 w-7 top-1/2 fill-[currentColor] font-thin -translate-y-1/2 -right-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                
+                <path
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                />
+              </svg>
+            </button>
+            
+          </div>
+        </div>
+        <ul class="ml-auto space-y-6 text-[#b0b2c3] absolute right-8">
+          <li>
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"
+              ><svg
+                class="w-7 hover:text-white hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                /></svg
+            ></a>
+          </li>
+          
+          <li>
+            <a href="https://www.instagram.com/a2_pandey/?hl=en" target="_blank"
+              ><svg
+                class="w-7 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                /></svg
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:a2pandey07092001@gmail.com" target="_blank"
+              ><svg
+                class="w-7 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+                /></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/anuragapandey" target="_blank"
+              ><svg
+                class="w-7 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 496 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                /></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.snapchat.com/add/a2_pandey?share_id=4VMvqIjLJuM&locale=en-IN" target="_blank"
+              >
+              <svg 
+              class="w-7"
+              xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 512 512">
+              
+              <path 
+              fill="currentColor"
+              d="M496.9 366.6c-3.4-9.2-9.8-14.1-17.1-18.2-1.4-.8-2.6-1.5-3.7-1.9-2.2-1.1-4.4-2.2-6.6-3.4-22.8-12.1-40.6-27.3-53-45.4a102.9 102.9 0 0 1 -9.1-16.1c-1.1-3-1-4.7-.2-6.3a10.2 10.2 0 0 1 2.9-3c3.9-2.6 8-5.2 10.7-7 4.9-3.2 8.8-5.7 11.2-7.4 9.4-6.5 15.9-13.5 20-21.3a42.4 42.4 0 0 0 2.1-35.2c-6.2-16.3-21.6-26.4-40.3-26.4a55.5 55.5 0 0 0 -11.7 1.2c-1 .2-2.1 .5-3.1 .7 .2-11.2-.1-22.9-1.1-34.5-3.5-40.8-17.8-62.1-32.7-79.2A130.2 130.2 0 0 0 332.1 36.4C309.5 23.5 283.9 17 256 17S202.6 23.5 180 36.4a129.7 129.7 0 0 0 -33.3 26.8c-14.9 17-29.2 38.4-32.7 79.2-1 11.6-1.2 23.4-1.1 34.5-1-.3-2-.5-3.1-.7a55.5 55.5 0 0 0 -11.7-1.2c-18.7 0-34.1 10.1-40.3 26.4a42.4 42.4 0 0 0 2 35.2c4.1 7.8 10.7 14.7 20 21.3 2.5 1.7 6.4 4.2 11.2 7.4 2.6 1.7 6.5 4.2 10.3 6.7a11.1 11.1 0 0 1 3.3 3.3c.8 1.6 .8 3.4-.4 6.6a102 102 0 0 1 -8.9 15.8c-12.1 17.7-29.4 32.6-51.4 44.6C32.4 348.6 20.2 352.8 15.1 366.7c-3.9 10.5-1.3 22.5 8.5 32.6a49.1 49.1 0 0 0 12.4 9.4 134.3 134.3 0 0 0 30.3 12.1 20 20 0 0 1 6.1 2.7c3.6 3.1 3.1 7.9 7.8 14.8a34.5 34.5 0 0 0 9 9.1c10 6.9 21.3 7.4 33.2 7.8 10.8 .4 23 .9 36.9 5.5 5.8 1.9 11.8 5.6 18.7 9.9C194.8 481 217.7 495 256 495s61.3-14.1 78.1-24.4c6.9-4.2 12.9-7.9 18.5-9.8 13.9-4.6 26.2-5.1 36.9-5.5 11.9-.5 23.2-.9 33.2-7.8a34.6 34.6 0 0 0 10.2-11.2c3.4-5.8 3.3-9.9 6.6-12.8a19 19 0 0 1 5.8-2.6A134.9 134.9 0 0 0 476 408.7a48.3 48.3 0 0 0 13-10.2l.1-.1C498.4 388.5 500.7 376.9 496.9 366.6zm-34 18.3c-20.7 11.5-34.5 10.2-45.3 17.1-9.1 5.9-3.7 18.5-10.3 23.1-8.1 5.6-32.2-.4-63.2 9.9-25.6 8.5-42 32.8-88 32.8s-62-24.3-88.1-32.9c-31-10.3-55.1-4.2-63.2-9.9-6.6-4.6-1.2-17.2-10.3-23.1-10.7-6.9-24.5-5.7-45.3-17.1-13.2-7.3-5.7-11.8-1.3-13.9 75.1-36.4 87.1-92.6 87.7-96.7 .6-5 1.4-9-4.2-14.1-5.4-5-29.2-19.7-35.8-24.3-10.9-7.6-15.7-15.3-12.2-24.6 2.5-6.5 8.5-8.9 14.9-8.9a27.6 27.6 0 0 1 6 .7c12 2.6 23.7 8.6 30.4 10.2a10.7 10.7 0 0 0 2.5 .3c3.6 0 4.9-1.8 4.6-5.9-.8-13.1-2.6-38.7-.6-62.6 2.8-32.9 13.4-49.2 26-63.6 6.1-6.9 34.5-37 88.9-37s82.9 29.9 88.9 36.8c12.6 14.4 23.2 30.7 26 63.6 2.1 23.9 .3 49.5-.6 62.6-.3 4.3 1 5.9 4.6 5.9a10.6 10.6 0 0 0 2.5-.3c6.7-1.6 18.4-7.6 30.4-10.2a27.6 27.6 0 0 1 6-.7c6.4 0 12.4 2.5 14.9 8.9 3.5 9.4-1.2 17-12.2 24.6-6.6 4.6-30.4 19.3-35.8 24.3-5.6 5.1-4.8 9.1-4.2 14.1 .5 4.2 12.5 60.4 87.7 96.7C468.6 373 476.1 377.5 462.9 384.9z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] self-center after:left-1/2 after:-transform-x-1/2 after:top-full"
+      >
+       <a href="#latest-work">
+        <button
+        class="bg-[#4595eb] mb-7 hover:scale-105 ease-in-out duration-200 group relative py-2 px-5 rounded-[5px] font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6]"
+      >
+        Latest Works
+        <svg
+          class="absolute rotate-90 group-hover:top-8 w-7 fill-[currentColor] font-thin -translate-x-1/2 left-1/2 top-7"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+          />
+        </svg>
+      </button>
+       </a>
+      </div>
+
+      <section id="about-me" class=" z-999 transition-all duration-700 mx-auto w-[100%] top-0 absolute ">
+        <div style="background-color: #252323;"  class=" flex box-border bg-[#252323a9]
+         flex-col sm:flex-row mt-[10vh] relative min-h-[80vh]
+          mx-auto m-4  max-w-5xl px-8 sm:p-4 font-[Nunito] ">
+          <div class="about-me-detail w-[100%] sm:w-1/2 sm:ml-6">
+            <h1 class=" text-center sm:text-left font-bold text-[20px] mt-5 mb-4 text-[#1788ae]">ABOUT ME</h1>
+          <p class="italic font-['Merriweather'] mb-[30px]">Interactive Front-end Developer</p>
+          <p>
+            I am Anurag pandey, a 22 year old Indian <span class="text-red-300">Freelance Front-end developer</span>.
+            When I’m not coding, you’ll find me at the gym or dreaming up the next big UI trend! ☕💡💻.
+            </p>
+           <p class="mb-4">I like to <span class="text-red-300">create</span> beautiful and <span class="text-red-300">user-friendly</span> web experiences.
+           <span class="text-red-300"> Technologies and tools</span> I use to create such awesome websites.
+          </p>
+          <ul class="flex flex-wrap mb-5 sm:mb-7">
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#javascript</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#react.js</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#redux</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#html</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#css</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#tailwind</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#git</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#github</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#figma</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#Node.Js</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#next.Js</li>
+          </ul>
+            <div class="flex gap-10  ">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#ffd600" d="M6,42V6h36v36H6z"/><path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"/></svg>
+                <svg
+        width="50"
+        height="50"
+        viewBox="175.7 78 490.6 436.9"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g fill="#61dafb">
+            <path
+                d="m666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9v-22.3c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6v-22.3c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zm-101.4 106.7c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24s9.5 15.8 14.4 23.4zm73.9-208.1c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6s22.9-35.6 58.3-50.6c8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zm53.8 142.9c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6z"
+            ></path>
+            <circle cx="420.9" cy="296.5" r="45.7"></circle>
+        </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#F4511E" d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#00acc1" d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"/></svg>
+            </div>
+          </div>
+        <div class="hidden sm:block w-1/2 ">
+            <img class=" sm:mx-auto sm:w-auto " src="assets/images/cartoon-boy.png" alt="">
+            
+        </div>
+        <svg id="close-icon" class="absolute top-[4px] right-[4px] cursor-pointer hover:stroke-red-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </div>
+      </section>
+
+      <!-- <div class="absolute z-9 inset-0 hidden md:block" id="wrapper-canvas"></div> -->
+
+    </section>
+
+    <section id="latest-work" class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16">
+        <h2
+          class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-b-2 border-[#1788ae]"
+        >
+          Latest Works
+        </h2>
+        <div
+          class="flex flex-col sm:flex-row gap-4 mt-8 sm:gap-[80px] items-center sm:mt-20 relative"
+        >
+          <div
+            class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"
+          ></div>
+          <div
+            class="w-4 h-4 rounded-full border-[3px] border-[#459bd5] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"
+          ></div>
+          <a href="https://meetdesk.netlify.app/"
+            class="flex w-full relative justify-center sm:justify-start"
+          >
+            <div
+              class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200"
+            >
+              <img
+                class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                src="./assets/images/MeetDesk1.png"
+                alt=""
+              />
+              <span
+                class="flex group-hover:-top-14 ease-jump duration-200 bg-[#459bd5] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+                >MeetDesk Web App
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </div>
+          </a>
+  
+          <div class="w-full">
+            <h3 class="text-[#459bd5] font-bold text-2xl md:text-4xl">
+              MeetDesk Web App
+            </h3>
+            <span class="text-[#459bd5] text-base md:text-lg"
+              >(Google Meet & AnyDesk)</span
+            >
+            <p class="text-justify text-sm md:text-base mt-2">
+              MeetDesk is a web app designed to enhance productivity and collaboration, likely focusing on seamless 
+              meeting management, scheduling, and remote team interactions. Your team is working on its development,
+              incorporating blockchain technology and user-friendly UI/UX.
+
+            </p>
+  
+            <ul class="flex flex-wrap gap-2 mt-2">
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #Next.js
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #Node.js
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #Clerk
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #GetStream
+              </li>
+              
+              
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #Shadcn
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #javascript
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #TailWind CSS
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div
+          class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative"
+        >
+          <div class="order-2 sm:order-1 w-full">
+            <h3 class="text-[#ffe578] font-bold text-2xl md:text-4xl">
+              NoteNest
+            </h3>
+            <span class="text-[#ffe578] text-base md:text-lg"
+              >(Note Taking Web App)</span
+            >
+            <p class="text-justify text-sm md:text-base mt-2">
+              NoteNest is a React-based web app designed for seamless note-taking and organization. It features user authentication, note creation, deletion,
+               and archiving, ensuring a smooth and efficient experience.
+            </p>
+  
+            <ul class="flex flex-wrap gap-2 mt-2">
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #react.js
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #vite
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #Tailwind CSS
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #Context API
+              </li>
+              
+            
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #css
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #javascript
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #figma
+              </li>
+            </ul>
+          </div>
+          <div
+            class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"
+          ></div>
+          <div
+            class="w-4 h-4 rounded-full border-[3px] border-[#ffe578] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"
+          ></div>
+          <a
+            href="https://agnotenest.netlify.app/"
+            class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start"
+          >
+            <div
+              class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto"
+            >
+              <img
+                class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                src="./assets/images/NoteNest1.png"
+                alt=""
+              />
+              <span
+                class="flex group-hover:-top-14 ease-jump duration-200 text-black bg-[#ffe578] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+                >NoteNest
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative"
+        >
+          <div
+            class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"
+          ></div>
+          <div
+            class="w-4 h-4 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"
+          ></div>
+          <a
+            href="https://agcountryscout.netlify.app"
+            class="flex w-full relative justify-center sm:justify-start"
+          >
+            <div
+              class="flex flex-col items-center relative group hover:scale-105 ease-in-out sm:mr-auto duration-200"
+            >
+              <img
+                class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                src="./assets/images/country1.png"
+                alt=""
+              />
+              <span
+                class="flex group-hover:-top-14 ease-jump duration-200 bg-[#fc815c] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+                >CountriesCout
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </div>
+          </a>
+  
+          <div class="w-full">
+            <h3 class="text-[#fc815c] font-bold text-2xl md:text-4xl">
+              CountriesCout
+            </h3>
+            <span class="text-[#fc815c] text-base md:text-lg"
+              >(Country Explorer)</span
+            >
+            <p class="text-justify text-sm md:text-base mt-2">
+              Country Explorer is a Vanilla JavaScript web app that fetches data from the REST Countries API and displays a list of countries. Users can search for a country, view details by clicking on a country card, and see information like population, region, capital, currency, and languages. 
+              The app features a clean UI with CSS for styling.
+            </p>
+  
+            <ul class="flex flex-wrap gap-2 mt-2">
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #HTML
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #CSS
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #javascript (Vanilla JS)
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #REST Countries API
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #LocalStorage
+              </li>
+              
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #figma
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div
+          class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative"
+        >
+          <div class="order-2 sm:order-1 w-full">
+            <h3 class="text-[#47afa1] font-bold text-2xl md:text-4xl">
+              Portfolio
+            </h3>
+            <span class="text-[#47afa1] text-base md:text-lg"
+              >(personal Portfolio)</span
+            >
+            <p class="text-justify text-sm md:text-base mt-2">
+              modern and responsive portfolio website built using HTML, JavaScript, and Tailwind CSS to showcase my projects, skills, and experience. It features a clean UI, interactive animations, and smooth navigation, providing a seamless user experience. 
+              The website is fully responsive and optimized for performance.
+            </p>
+  
+            <ul class="flex flex-wrap gap-2 mt-2">
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #HTML
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #tailwind
+              </li>
+              
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #css
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #javascript
+              </li>
+              <li
+                class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              >
+                #figma
+              </li>
+            </ul>
+          </div>
+          <div
+            class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"
+          ></div>
+          <div
+            class="w-4 h-4 rounded-full border-[3px] border-[#47afa1] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"
+          ></div>
+          <a
+            href="#"
+            class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start"
+          >
+            <div
+              class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto"
+            >
+              <img
+                class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+                src="./assets/images/portfolio.png"
+                alt=""
+              />
+              <span
+                class="flex group-hover:-top-14 ease-jump duration-200 bg-[#47afa1] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+                >Portfolio
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </div>
+
+        
+        <div
+          class="w-[2px] hidden sm:block bg-[#1788ae] absolute top-0 bottom-0 left-1/2 -translate-x-1/2"
+        ></div>
+      </section>
+      
+  
+      <section class="max-w-screen-xl mx-auto px-4 pb-12">
+        <h2
+          class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md"
+        >
+          Let's Connect
+        </h2>
+        <div class="flex flex-col md:flex-row items-center mt-10">
+          <div class="w-full">
+            <img src="./assets/images/contact-me.svg" alt="phone" />
+          </div>
+          <form class="w-full" name="contactUS" netlify>
+            <label
+              for="name"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >Name</label
+            >
+            <div class="relative mb-4">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                placeholder="Anurag Pandey"
+              />
+            </div>
+            <label
+              for="email"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >Your Email</label
+            >
+            <div class="relative mb-4">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 16"
+                >
+                  <path
+                    d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"
+                  />
+                  <path
+                    d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                placeholder="name@gmail.com"
+              />
+            </div>
+            <label
+              for="message"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >Message</label
+            >
+            <div class="relative mb-4">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+              ></div>
+              <textarea
+                id="message"
+                name="message"
+                rows="8"
+                class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full text-white bg-[#1788ae] hover:bg-[#1280a4] focus:ring-4 focus:ring-[#4489a0] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="flex flex-col items-center pb-10">
+        <p class="text-xs text-gray-300">Anurag Pandey 2025</p>
+        <div class="black-logo my-4">
+          <svg
+          width="50"
+          height="103"
+          viewBox="0 0 116 111"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M52.7606 1C47.6004 2.72879 21.5233 90.1138 5.78756 90.1138C-9.94823 90.1138 17.7658 116.352 22.2282 108.551C26.6906 100.751 49.0026 24.6376 52.7606 50.8754C56.5185 77.1131 97.8549 113.279 115 109.197C115 109.197 31.5751 18.7949 49.8945 28.25C68.2139 37.7051 52.7606 1 52.7606 1Z"
+            fill="url(#paint0_linear_63_2)"
+          />
+          <path
+            d="M115 109.197C115 109.197 66.6177 11.6369 52.7606 1C52.7606 1 68.2139 37.7051 49.8945 28.25C31.5751 18.7949 115 109.197 115 109.197Z"
+            fill="url(#paint1_linear_63_2)"
+          />
+          <path
+            d="M52.7606 1C47.6004 2.72879 21.5233 90.1138 5.78756 90.1138C-9.94823 90.1138 17.7658 116.352 22.2282 108.551C26.6906 100.751 49.0026 24.6376 52.7606 50.8754C56.5185 77.1131 97.8549 113.279 115 109.197M52.7606 1C66.6177 11.6369 115 109.197 115 109.197M52.7606 1C52.7606 1 68.2139 37.7051 49.8945 28.25C31.5751 18.7949 115 109.197 115 109.197"
+            stroke="black"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_63_2"
+              x1="55.814"
+              y1="-2.54565"
+              x2="123.142"
+              y2="104.342"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0.25" stop-color="white" />
+              <stop offset="0.425" stop-color="white" />
+              <stop offset="0.705" stop-color="white" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_63_2"
+              x1="58"
+              y1="1"
+              x2="51.7657"
+              y2="79.7011"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0.415" stop-color="white" />
+              <stop offset="1" stop-color="#B0B2C3" />
+            </linearGradient>
+          </defs>
+        </svg>
+        </div>
+        <ul class="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]">
+          <li>
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">
+              <svg
+                class="w-5 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://www.instagram.com/a2_pandey/?hl=en">
+              <svg
+                class="w-5 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:a2pandey07092001@gmail.com" target="_blank">
+              <svg
+                class="w-5 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/anuragapandey">
+              <svg
+                class="w-5 hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 496 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                /></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.snapchat.com/add/a2_pandey?share_id=4VMvqIjLJuM&locale=en-IN">
+              <svg 
+              class="w-5 hover:text-white"
+              xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 512 512">
+                <path
+                fill="currentColor"
+                 d="M496.9 366.6c-3.4-9.2-9.8-14.1-17.1-18.2-1.4-.8-2.6-1.5-3.7-1.9-2.2-1.1-4.4-2.2-6.6-3.4-22.8-12.1-40.6-27.3-53-45.4a102.9 102.9 0 0 1 -9.1-16.1c-1.1-3-1-4.7-.2-6.3a10.2 10.2 0 0 1 2.9-3c3.9-2.6 8-5.2 10.7-7 4.9-3.2 8.8-5.7 11.2-7.4 9.4-6.5 15.9-13.5 20-21.3a42.4 42.4 0 0 0 2.1-35.2c-6.2-16.3-21.6-26.4-40.3-26.4a55.5 55.5 0 0 0 -11.7 1.2c-1 .2-2.1 .5-3.1 .7 .2-11.2-.1-22.9-1.1-34.5-3.5-40.8-17.8-62.1-32.7-79.2A130.2 130.2 0 0 0 332.1 36.4C309.5 23.5 283.9 17 256 17S202.6 23.5 180 36.4a129.7 129.7 0 0 0 -33.3 26.8c-14.9 17-29.2 38.4-32.7 79.2-1 11.6-1.2 23.4-1.1 34.5-1-.3-2-.5-3.1-.7a55.5 55.5 0 0 0 -11.7-1.2c-18.7 0-34.1 10.1-40.3 26.4a42.4 42.4 0 0 0 2 35.2c4.1 7.8 10.7 14.7 20 21.3 2.5 1.7 6.4 4.2 11.2 7.4 2.6 1.7 6.5 4.2 10.3 6.7a11.1 11.1 0 0 1 3.3 3.3c.8 1.6 .8 3.4-.4 6.6a102 102 0 0 1 -8.9 15.8c-12.1 17.7-29.4 32.6-51.4 44.6C32.4 348.6 20.2 352.8 15.1 366.7c-3.9 10.5-1.3 22.5 8.5 32.6a49.1 49.1 0 0 0 12.4 9.4 134.3 134.3 0 0 0 30.3 12.1 20 20 0 0 1 6.1 2.7c3.6 3.1 3.1 7.9 7.8 14.8a34.5 34.5 0 0 0 9 9.1c10 6.9 21.3 7.4 33.2 7.8 10.8 .4 23 .9 36.9 5.5 5.8 1.9 11.8 5.6 18.7 9.9C194.8 481 217.7 495 256 495s61.3-14.1 78.1-24.4c6.9-4.2 12.9-7.9 18.5-9.8 13.9-4.6 26.2-5.1 36.9-5.5 11.9-.5 23.2-.9 33.2-7.8a34.6 34.6 0 0 0 10.2-11.2c3.4-5.8 3.3-9.9 6.6-12.8a19 19 0 0 1 5.8-2.6A134.9 134.9 0 0 0 476 408.7a48.3 48.3 0 0 0 13-10.2l.1-.1C498.4 388.5 500.7 376.9 496.9 366.6zm-34 18.3c-20.7 11.5-34.5 10.2-45.3 17.1-9.1 5.9-3.7 18.5-10.3 23.1-8.1 5.6-32.2-.4-63.2 9.9-25.6 8.5-42 32.8-88 32.8s-62-24.3-88.1-32.9c-31-10.3-55.1-4.2-63.2-9.9-6.6-4.6-1.2-17.2-10.3-23.1-10.7-6.9-24.5-5.7-45.3-17.1-13.2-7.3-5.7-11.8-1.3-13.9 75.1-36.4 87.1-92.6 87.7-96.7 .6-5 1.4-9-4.2-14.1-5.4-5-29.2-19.7-35.8-24.3-10.9-7.6-15.7-15.3-12.2-24.6 2.5-6.5 8.5-8.9 14.9-8.9a27.6 27.6 0 0 1 6 .7c12 2.6 23.7 8.6 30.4 10.2a10.7 10.7 0 0 0 2.5 .3c3.6 0 4.9-1.8 4.6-5.9-.8-13.1-2.6-38.7-.6-62.6 2.8-32.9 13.4-49.2 26-63.6 6.1-6.9 34.5-37 88.9-37s82.9 29.9 88.9 36.8c12.6 14.4 23.2 30.7 26 63.6 2.1 23.9 .3 49.5-.6 62.6-.3 4.3 1 5.9 4.6 5.9a10.6 10.6 0 0 0 2.5-.3c6.7-1.6 18.4-7.6 30.4-10.2a27.6 27.6 0 0 1 6-.7c6.4 0 12.4 2.5 14.9 8.9 3.5 9.4-1.2 17-12.2 24.6-6.6 4.6-30.4 19.3-35.8 24.3-5.6 5.1-4.8 9.1-4.2 14.1 .5 4.2 12.5 60.4 87.7 96.7C468.6 373 476.1 377.5 462.9 384.9z"/>
+                </svg>
+            </a>
+          </li>
+        </ul>
+      </footer>
+
+
+      <!-- <section id="about-me" class="transition-all duration-700 z-999 mx-auto w-[100%] top-0 absolute ">
+        <div style="background-color: #252323;"  class=" flex box-border bg-[#252323a9]
+         flex-col sm:flex-row mt-[10vh] relative min-h-[80vh]
+          mx-auto m-4  max-w-5xl px-8 sm:p-4 font-[Nunito] ">
+          <div class="about-me-detail w-[100%] sm:w-1/2 sm:ml-6">
+            <h1 class=" text-center sm:text-left font-bold text-[20px] mt-5 mb-4 text-[#1788ae]">ABOUT ME</h1>
+          <p class="italic font-['Merriweather'] mb-[30px]">Interactive Front-end Developer</p>
+          <p>
+            I am Amandeep Guggi, a 22 year old Indian <span class="text-red-300">Freelance Front-end developer</span>.
+            When I’m not coding, you’ll find me at the gym or dreaming up the next big UI trend! ☕💡💻.
+            </p>
+           <p class="mb-4">I like to <span class="text-red-300">create</span> beautiful and <span class="text-red-300">user-friendly</span> web experiences.
+           <span class="text-red-300"> Technologies and tools</span> I use to create such awesome websites.
+          </p>
+          <ul class="flex flex-wrap mb-5 sm:mb-7">
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#javascript</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#react.js</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#redux</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#html</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#css</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#tailwind</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#git</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#github</li>
+            <li class=" self-center py-1 px-3 rounded-[50px] mb-2 mr-2 border-[1px] border-[#444]">#figma</li>
+          </ul>
+            <div class="flex gap-10  ">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#ffd600" d="M6,42V6h36v36H6z"/><path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"/></svg>
+                <svg
+        width="50"
+        height="50"
+        viewBox="175.7 78 490.6 436.9"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g fill="#61dafb">
+            <path
+                d="m666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9v-22.3c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6v-22.3c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zm-101.4 106.7c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24s9.5 15.8 14.4 23.4zm73.9-208.1c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6s22.9-35.6 58.3-50.6c8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zm53.8 142.9c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6z"
+            ></path>
+            <circle cx="420.9" cy="296.5" r="45.7"></circle>
+        </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#F4511E" d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#00acc1" d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"/></svg>
+            </div>
+          </div>
+        <div class="hidden sm:block w-1/2 ">
+            <img class=" sm:mx-auto sm:w-auto " src="assets/images/cartoon-girl.png" alt="">
+            
+        </div>
+        <svg id="close-icon" class="absolute top-[4px] right-[4px] cursor-pointer hover:stroke-red-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </div>
+      </section> -->
+    
+      <script type="text/javascript" src="particles.js"></script>
+      <script type="text/javascript" src="app.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+  </body>
+</html>
